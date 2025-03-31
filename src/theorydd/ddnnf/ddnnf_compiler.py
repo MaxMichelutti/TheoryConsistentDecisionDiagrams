@@ -121,7 +121,7 @@ class DDNNFCompiler(ABC):
     def write_dimacs_false(self, dimacs_file: str) -> None:
         """writes the equivalent of a unsatisfiable formula in a dimacs file"""
         with open(dimacs_file, "w", encoding="utf8") as dimacs_out:
-            dimacs_out.write("p cnf 1 1\n1 -1 0\n")
+            dimacs_out.write("p cnf 1 2\n1 0\n-1 0\n")
 
     def _clean_tmp_folder(self, tmp_folder: str) -> None:
         """cleans the tmp folder"""
