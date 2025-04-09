@@ -63,7 +63,7 @@ class TheoryBDD(TheoryDD):
                 Valid solvers are "partial", "total" and "extended_partial", or you can pass an instance of a SMTEnumerator
             tlemmas (List[Fnode] | None): use previously computed tlemmas.
                 This skips the All-SMT computation
-            load_lemmas (str | None) [None]: specify the path to a file from which to load phi & lemmas.
+            load_lemmas (str | None) [None]: specify the path to a file from which to load the tlemmas.
                 This skips the All-SMT computation
             sat_result (bool | None) [None]: the result of the All-SMT computation. This value is overwritten if t-lemmas are not provided!!!
             use_ordering (List[FNode] | None) [None]: the ordering of the variables in the BDD.
