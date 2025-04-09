@@ -20,7 +20,7 @@ def extract(
 
     Args:
         phi (FNode): a pysmt formula
-        smt_solver (SMTSolver | PartialSMTSolver): the SMT solver to be used for lemma extraction
+        smt_solver (SMTEnumerator): the SMT solver to be used for lemma extraction
         enumerate_true (bool) [False]: if set to True, enumerate all T-lemmas possible
             over the atoms of phi
         use_boolean_mapping (bool) [False]: optional for SMTEnumerator, if the solver 
